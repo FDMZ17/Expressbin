@@ -3,7 +3,7 @@
 > For a Expressbin demo click here: https://paste.fdmz17.repl.co
 
 # Setup
-First, clone this repo with the following command: `git clone https://github.com/FDMZ17/expressbin`
+First, clone this repo with the following command: `git clone https://github.com/FDMZ17/Expressbin`
 
 Then run `npm install` to install the dependencies
 
@@ -35,6 +35,14 @@ Make sure to replace the `<ssl path>` and `<cert path>` with your ssl and cert p
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+# Changelog
+> v 1.1
+- Adding ssl config
+- Adding readme.md
+
+> v 1.0
+- First version
 
 ## License
 [GNU](https://choosealicense.com/licenses/agpl-3.0/)
