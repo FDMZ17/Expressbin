@@ -3,7 +3,7 @@ var colors = require("colors");
 
 // [INFO] console out
 var info = function (message) {
-  console.log(colors.bold("[Expressbin Info]"), message);
+  console.log(colors.blue.bold("[Expressbin Info]"), message);
 };
 
 // [ERROR] console out 
