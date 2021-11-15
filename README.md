@@ -1,0 +1,41 @@
+# Discord.JS-Template
+> My template for discord.js bot [v2.0]
+> 
+> My DiscordJS bot: https://urlsh.repl.co/fdmz17bot
+
+# Setup
+First, clone this repo with the following command: ` git clone https://github.com/FDMZ17/expressbin/`
+Then run `npm install` to install the dependencies,
+Then run `npm start` to start the server
+
+# SSL [optional]
+ Make sure to replace the <ssl path> and <cert path> with your ssl and cert path
+
+```javascript
+module.exports = {
+	"appname": "Expressbin",
+	"host": "0.0.0.0",
+	"port": 8080,
+	"dataPath": "./data",
+	"keyLength": 10,
+	"maxLength": 500000,
+	"createKey": "",
+	"ssl": {
+		"useSSL": false,
+		"privateKeyPath": "<ssl path>",
+		"certificatePath": "<cert path>"
+	},
+}
+```
+
+# Do not claim this code as your code
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[GNU](https://choosealicense.com/licenses/agpl-3.0/)
+
+# Discord
+> FDMZ17#4616
