@@ -26,7 +26,7 @@ module.exports = {
 	},
 }
 ```
-Make sure to replace the <ssl path> and <cert path> with your ssl and cert path
+Make sure to replace the `<ssl path>` and `<cert path>` with your ssl and cert path
 	
 
 # Contributing
