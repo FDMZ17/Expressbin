@@ -6,7 +6,7 @@ var info = function (message) {
   console.log(colors.bold("[Expressbin Info]"), message);
 };
 
-// [ERROR] console out
+// [ERROR] console out 
 var error = function (message) {
   console.log(colors.red.bold("[Expressbin Error]"), message);
 };

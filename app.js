@@ -15,7 +15,7 @@ logs.success("Server has been running on port " + config.port);
 // init file-storage
 const fileStorage = new FileStorage(config.dataPath);
 
-// configure the document handler
+// configure the document handler 
 const documentHandler = new DocumentHandler({
   store: fileStorage,
   maxLength: config.maxLength,
