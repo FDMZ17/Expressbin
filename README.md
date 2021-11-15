@@ -7,8 +7,8 @@ First, clone this repo with the following command: ` git clone https://github.co
 Then run `npm install` to install the dependencies,
 Then run `npm start` to start the server
 
+
 # SSL [optional]
- Make sure to replace the <ssl path> and <cert path> with your ssl and cert path
 
 ```javascript
 module.exports = {
@@ -26,9 +26,10 @@ module.exports = {
 	},
 }
 ```
+Make sure to replace the <ssl path> and <cert path> with your ssl and cert path
+	
 
-# Do not claim this code as your code
-## Contributing
+# Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
