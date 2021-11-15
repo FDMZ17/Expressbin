@@ -44,7 +44,7 @@ Please make sure to update tests as appropriate.
 > v 1.0
 - First version
 
-## License
+# License
 [GNU](https://choosealicense.com/licenses/agpl-3.0/)
 
 # Discord
