@@ -69,7 +69,7 @@ haste.prototype.loadDocument = function (key) {
 	});
 };
 
-// duplicate the current document
+// duplicate the current document 
 haste.prototype.duplicateDocument = function () {
 	if (this.doc.locked) {
 		var currentData = this.doc.data;
