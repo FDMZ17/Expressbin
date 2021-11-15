@@ -1,7 +1,6 @@
-# Discord.JS-Template
-> My template for discord.js bot [v2.0]
+# Expressbin
 > 
-> My DiscordJS bot: https://urlsh.repl.co/fdmz17bot
+> For a Expressbin demo click here: https://paste.fdmz17.repl.co
 
 # Setup
 First, clone this repo with the following command: ` git clone https://github.com/FDMZ17/expressbin/`
