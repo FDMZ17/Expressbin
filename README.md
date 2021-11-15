@@ -1,6 +1,6 @@
 # Expressbin
 > 
-> For a Expressbin demo click here: https://paste.fdmz17.repl.co
+> Expressbin demo: https://paste.fdmz17.repl.co
 
 # Setup
 First, clone this repo with the following command: `git clone https://github.com/FDMZ17/Expressbin`
