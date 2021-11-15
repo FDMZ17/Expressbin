@@ -3,8 +3,10 @@
 > For a Expressbin demo click here: https://paste.fdmz17.repl.co
 
 # Setup
-First, clone this repo with the following command: ` git clone https://github.com/FDMZ17/expressbin/`
-Then run `npm install` to install the dependencies,
+First, clone this repo with the following command: `git clone https://github.com/FDMZ17/expressbin`
+
+Then run `npm install` to install the dependencies
+
 Then run `npm start` to start the server
 
 
