@@ -38,6 +38,7 @@ Please make sure to update tests as appropriate.
 
 # Changelog
 > v 1.1
+- Adding ssl 
 - Adding ssl config
 - Adding readme.md
 
