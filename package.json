@@ -12,13 +12,9 @@
     "clean-css": "^5.2.2",
     "colors": "^1.4.0",
     "express": "^4.17.1",
-    "express-slow-down": "^1.4.0",
-    "@snyk/protect": "latest"
+    "express-slow-down": "^1.4.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "prepare": "npm run snyk-protect",
-    "snyk-protect": "snyk-protect"
-  },
-  "snyk": true
+    "start": "node app.js"
+  }
 }
