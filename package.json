@@ -10,7 +10,7 @@
 		"browser-sync": "^2.27.7",
 		"chalk": "^4.1.2",
 		"clean-css": "^5.2.2",
-		"colors": "^1.4.0",
+		"colors": "^1.2.2",
 		"express": "^4.17.1"
 	},
 	"scripts": {
