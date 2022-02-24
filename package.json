@@ -1,20 +1,24 @@
 {
-	"name": "expressbin",
-	"version": "1.0.0",
-	"main": "index.js",
-	"description": "Expressbin is an open-source Pastebin software written in node.js.",
-	"keywords": [],
-	"author": "FDMZ17",
-	"license": "MIT",
-	"dependencies": {
-		"browser-sync": "^0.9.1",
-		"chalk": "^4.1.2",
-		"clean-css": "^5.2.2",
-		"colors": "^1.4.0",
-		"express": "^4.17.1",
-		"express-slow-down": "^1.4.0"
-	},
-	"scripts": {
-		"start": "node app.js"
-	}
+  "name": "expressbin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Expressbin is an open-source Pastebin software written in node.js.",
+  "keywords": [],
+  "author": "FDMZ17",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "chalk": "^4.1.2",
+    "clean-css": "^5.2.2",
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "express-slow-down": "^1.4.0",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
