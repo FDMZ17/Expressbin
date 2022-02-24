@@ -1,3 +1,5 @@
+let config = '../config/config'
+
 var haste = function () {
 	this.appName = config.appname;
 	this.$textarea = $('textarea');
