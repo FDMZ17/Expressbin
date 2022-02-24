@@ -7,7 +7,7 @@
 	"author": "FDMZ17",
 	"license": "MIT",
 	"dependencies": {
-		"browser-sync": "^2.27.7",
+		"browser-sync": "^0.9.1",
 		"chalk": "^4.1.2",
 		"clean-css": "^5.2.2",
 		"colors": "^1.2.2",

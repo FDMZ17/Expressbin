@@ -3,11 +3,11 @@ const fs = require("fs");
 const express = require("express");
 const logs = require("./logger.js");
 
-const DocumentHandler = require("./lib/document_handler.js");
-const FileStorage = require("./lib/file_storage.js");
+const DocumentHandler = require("../lib/document_handler.js");
+const FileStorage = require("../lib/file_storage.js");
 
 // load configuration
-const config = require("./config.js");
+const config = require("../config/config.js");
 
 // logger-setup
 logs.success("Server has been running on port " + config.port);
@@ -37,7 +37,7 @@ app.get("/documents/:id", function (req, res) {
 });
 app.use(express.static("static"));
 app.get("/:id", function (req, res, next) {
-  res.sendFile(__dirname + "/static/index.html");
+  res.sendFile("../static/index.html");
 });
 
 var server;
