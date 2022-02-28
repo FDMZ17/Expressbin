@@ -27,10 +27,10 @@ const documentHandler = new DocumentHandler({
 const app = express();
 
 // set up rate limiter: maximum of five requests per minute
-var RateLimit = require('express-rate-limit');
-var limiter = new RateLimit({
+const RateLimit = require('express-rate-limit');
+const limiter = RateLimit({
   windowMs: 1*60*1000, // 1 minute
-  max: 5
+  max: 30
 });
 
 // apply rate limiter to all requests
