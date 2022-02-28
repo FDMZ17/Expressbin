@@ -26,6 +26,17 @@ const documentHandler = new DocumentHandler({
 // setup routes and request-handling
 const app = express();
 
+// set up rate limiter: maximum of five requests per minute
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 5
+});
+
+// apply rate limiter to all requests
+app.use(limiter);
+
+
 app.get("/raw/:id", function (req, res) {
   return documentHandler.handleRawGet(req.params.id, res);
 });
@@ -51,15 +62,5 @@ if (!config.ssl.useSSL) {
     cert: fs.readFileSync(config.ssl.certificatePath, 'utf8')
   }, app);
 }
-
-// set up rate limiter: maximum of five requests per minute
-var RateLimit = require('express-rate-limit');
-var limiter = new RateLimit({
-  windowMs: 1*60*1000, // 1 minute
-  max: 5
-});
-
-// apply rate limiter to all requests
-app.use(limiter);
 
 server.listen(config.port);
