@@ -52,14 +52,14 @@ if (!config.ssl.useSSL) {
   }, app);
 }
 
-const slowDown = require("express-slow-down");
-app.enable("trust proxy");
-const speedLimiter = slowDown({
-  windowMs: 1 * 60 * 1000, 
-  delayAfter: 5, 
-  delayMs: 500 
+// set up rate limiter: maximum of five requests per minute
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 5
 });
 
-app.use(speedLimiter);
+// apply rate limiter to all requests
+app.use(limiter);
 
 server.listen(config.port);
