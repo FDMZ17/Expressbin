@@ -63,4 +63,4 @@ if (!config.ssl.useSSL) {
   }, app);
 }
 
-server.listen(config.port);
+server.listen(process.env.PORT || config.port);
