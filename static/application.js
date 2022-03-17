@@ -1,7 +1,5 @@
-let config = '../config/config'
-
 var haste = function () {
-	this.appName = config.appname;
+	this.appName = 'Expressbin';
 	this.$textarea = $('textarea');
 	this.$box = $('#code');
 	this.$code = $('#code code');

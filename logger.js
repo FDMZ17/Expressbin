@@ -1,24 +1,24 @@
 // Console colors
-var colors = require("colors");
+var chalk = require("chalk");
 
 // [INFO] console out
 var info = function (message) {
-  console.log(colors.blue.bold("[Expressbin Info]"), message);
+  console.log(chalk.blue.bold("[=]"), message);
 };
 
 // [ERROR] console out 
 var error = function (message) {
-  console.log(colors.red.bold("[Expressbin Error]"), message);
+  console.log(chalk.red.bold("[!]"), message);
 };
 
 // [SUCCESS] console out
 var success = function (message) {
-  console.log(colors.green.bold("[Expressbin Success]"), message);
+  console.log(chalk.green.bold("[+]"), message);
 };
 
 // [AUTH] console out
 var auth = function (message) {
-  console.log(colors.yellow.bold("[Expressbin Auth]"), message);
+  console.log(chalk.yellow.bold("[^]"), message);
 };
 
 // Module exports
