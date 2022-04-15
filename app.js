@@ -1,4 +1,3 @@
-const url = require("url");
 const fs = require("fs");
 const express = require("express");
 const logs = require("./logger.js");
@@ -46,7 +45,9 @@ app.post("/documents", function (req, res) {
 app.get("/documents/:id", function (req, res) {
   return documentHandler.handleGet(req.params.id, res);
 });
+
 app.use(express.static("static"));
+
 app.get("/:id", function (req, res, next) {
   res.sendFile(__dirname + "/static/index.html");
 });
