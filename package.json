@@ -1,6 +1,6 @@
 {
   "name": "expressbin",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "index.js",
   "description": "Expressbin is an open-source Pastebin software written in node.js.",
   "keywords": [],
