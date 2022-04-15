@@ -9,6 +9,13 @@ Then run `npm install` to install the dependencies
 
 Then run `npm start` to start the server
 
+> Or
+Use docker
+
+Run the following command: `docker pull ghcr.io/fdmz17/expressbin:latest`
+
+Then run `docker run --publish 8080:8080 ghcr.io/fdmz17/expressbin` 
+
 
 # SSL [optional]
 
@@ -37,6 +44,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 # Changelog
+> v 1.2
+- Docker images
+
 > v 1.1
 - Adding ssl 
 - Adding ssl config
