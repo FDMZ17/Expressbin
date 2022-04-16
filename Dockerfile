@@ -6,6 +6,10 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN apk install bash
+
 COPY . .
 
-CMD [ "/bin/bash", "/entrypoints.sh" ]
+COPY ./entrypoints.sh /entrypoints.sh
+
+CMD [ "/bin/sh", "/entrypoints.sh" ]
