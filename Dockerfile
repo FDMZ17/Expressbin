@@ -10,6 +10,4 @@ RUN apk add bash
 
 COPY . .
 
-COPY ./entrypoints.sh /entrypoints.sh
-
-CMD [ "/bin/bash", "/entrypoints.sh" ]
+CMD [ "npm", "start" ]
