@@ -14,7 +14,7 @@ Use docker
 
 Run the following command: `docker pull ghcr.io/fdmz17/expressbin:latest`
 
-Then run `docker run --publish 8080:8080 ghcr.io/fdmz17/expressbin` 
+Then run `docker run --publish 7777:7777 ghcr.io/fdmz17/expressbin` 
 
 
 # SSL [optional]
@@ -23,7 +23,7 @@ Then run `docker run --publish 8080:8080 ghcr.io/fdmz17/expressbin`
 module.exports = {
 	"appname": "Expressbin",
 	"host": "0.0.0.0",
-	"port": 8080,
+	  "port": 7777,
 	"dataPath": "./data",
 	"keyLength": 10,
 	"maxLength": 500000,
